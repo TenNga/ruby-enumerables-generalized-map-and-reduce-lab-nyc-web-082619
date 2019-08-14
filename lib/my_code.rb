@@ -9,6 +9,7 @@ def map ( array )
   return newArray
 end
 
+<<<<<<< HEAD
 def reduce(sources, total = nil)
   i = 0 
   while i < sources.length do 
@@ -23,6 +24,14 @@ def reduce(sources, total = nil)
         total = yield(total, sources[i])
       end   
     end 
+=======
+
+def reduce(sources, starting_point = nil,)
+  i = 0 
+  total = nil 
+  while i < sources.length do 
+    total = yield(starting_point, sources[i])
+>>>>>>> a71ab182584c32debba1113a4f712116ede4cf79
     i += 1 
   end
   return total 
